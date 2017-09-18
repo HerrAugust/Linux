@@ -18,3 +18,6 @@ sudo mknod /dev/SimpleCharDriver c YOUR_MAJOR 0<br/>
 User program:<br/>
 gcc main.c<br/>
 sudo ./a.out<br/>
+
+## Test
+You should see that what you write in the User program is what you get back in the Terminal
