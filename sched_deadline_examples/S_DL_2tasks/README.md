@@ -32,12 +32,12 @@ Deschedule task:
 
 USEFUL LINKS
 ---------------------------------------
-https://github.com/evidence/test-sched-dl - SCHED_DEADLINE examples
-http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/ - basic guide on Makefiles
-http://disi.unitn.it/~abeni/RTOS/sched_deadline.pdf - some theory by Prof.Abeni
-http://events17.linuxfoundation.org/sites/events/files/slides/SCHED_DEADLINE-20160404.pdf - further theory
-https://ti.tuwien.ac.at/ecs/teaching/courses/brds/slides-1/rt-linux - theory from TU Wien
-https://github.com/torvalds/linux/blob/master/Documentation/scheduler/sched-deadline.txt - official doc on SCHED_DEADLINE
+- https://github.com/evidence/test-sched-dl - SCHED_DEADLINE examples
+- http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/ - basic guide on Makefiles
+- http://disi.unitn.it/~abeni/RTOS/sched_deadline.pdf - some theory by Prof.Abeni
+- http://events17.linuxfoundation.org/sites/events/files/slides/SCHED_DEADLINE-20160404.pdf - further theory
+- https://ti.tuwien.ac.at/ecs/teaching/courses/brds/slides-1/rt-linux - theory from TU Wien
+- https://github.com/torvalds/linux/blob/master/Documentation/scheduler/sched-deadline.txt - official doc on SCHED_DEADLINE
 
 CREDITS
 --------------------------------------
