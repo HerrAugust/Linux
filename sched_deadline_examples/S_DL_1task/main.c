@@ -17,9 +17,9 @@
 #include "SCHED_DEADLINE.h"
 
 int main(int argc, char** argv) {
-    unsigned int period     = 1 * 1000 * 1000; // ns
-    unsigned int wcet       = 50 * 1000 * 1000; // ns. Commonly it is WCET + 20% to prevent overrunning situations
-    unsigned int deadline   = 1 * 1000 * 1000; // ns
+    unsigned int period     = 1 * 1000 * 1000; // us
+    unsigned int wcet       = 50 * 1000 * 1000; // us. Commonly it is WCET + 20% to prevent overrunning situations
+    unsigned int deadline   = 1 * 1000 * 1000; // us
     unsigned long flags     = 0;
 
     while(argc > 0) {
