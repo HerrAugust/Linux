@@ -5,8 +5,8 @@ It creates a task that executes for C = 50ms every D = T = 1000ms = 1 sec.
 ## HOW TO COMPILE
 ----------------------------------------------
 
-  make
-  sudo ./main
+    make
+    sudo ./main
 
 
 ## Credits
