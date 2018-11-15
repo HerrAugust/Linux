@@ -18,6 +18,7 @@ Since periods are harmonic (80ms and 160ms), output tasks of C = 20ms, C = 20ms,
 LESSON LEARNED
 --------------------------------------
 Roughly simulate WCET busy time:
+
 	#include <time.h>
 	#include "timespec.h" // timespec_add_us()
 
@@ -28,6 +29,7 @@ Roughly simulate WCET busy time:
 	clock_nanosleep(CLOCK_MONOTONIC, TIMER_ABSTIME, &ts_next, NULL);
 
 Deschedule task:
+
 	sched_yield();
 
 USEFUL LINKS
