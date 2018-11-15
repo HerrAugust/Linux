@@ -1,0 +1,46 @@
+/**
+  * SCHED_DEADLINE task with C = 50ms every D = T = 1000ms = 1 sec.
+  *
+  * Contributions:
+  * Agostino Mascitti - original author, Nov. 201
+  */
+
+#define _GNU_SOURCE
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
+#include <linux/unistd.h>
+#include <linux/kernel.h>
+#include <linux/types.h>
+#include <sys/syscall.h>
+#include <pthread.h>
+
+#include <assert.h>
+#include <stdlib.h>
+
+#define gettid() syscall(__NR_gettid)
+
+#define SCHED_DEADLINE		6
+#define SCHED_FLAG_RESET_ON_FORK 0x01
+
+ /* XXX use the proper syscall numbers */
+ #ifdef __x86_64__
+ #define __NR_sched_setattr		314
+ #define __NR_sched_getattr		315
+ #endif
+
+ #ifdef __i386__
+ #define __NR_sched_setattr		351
+ #define __NR_sched_getattr		352
+ #endif
+
+ #ifdef __arm__
+ #define __NR_sched_setattr		380
+ #define __NR_sched_getattr		381
+ #endif
+
+int main(int argc, char** argv) {
+
+}
