@@ -2,20 +2,20 @@ This simple demo shows how to create a very simple sched-deadline = G-EDF + CBS.
 
 It creates a task that executes for C = 50ms every D = T = 160ms and another one that executes for C = 20ms every D = T = 80ms. CPU utilization is 5/16 + 1/4 = 3/8 <= 100%, thus the set can be scheduled by EDF. 
 
-HOW TO USE
+## HOW TO USE
 --------------------------------------
 Linux Kernel 3.14+
 
-make
-sudo ./main
+	make
+	sudo ./main
 
-RESULTS
+## RESULTS
 --------------------------------------
 Since periods are harmonic (80ms and 160ms), output tasks of C = 20ms, C = 20ms, C = 50ms and so on, as you can see in "my_result.png".
 
 <img src="my_result.png" alt="Result image"/>
 
-LESSON LEARNED
+## LESSON LEARNED
 --------------------------------------
 Roughly simulate WCET busy time:
 
@@ -32,7 +32,7 @@ Deschedule task:
 
 	sched_yield();
 
-USEFUL LINKS
+## USEFUL LINKS
 ---------------------------------------
 - https://github.com/evidence/test-sched-dl - SCHED_DEADLINE examples
 - http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/ - basic guide on Makefiles
@@ -41,6 +41,6 @@ USEFUL LINKS
 - https://ti.tuwien.ac.at/ecs/teaching/courses/brds/slides-1/rt-linux - theory from TU Wien
 - https://github.com/torvalds/linux/blob/master/Documentation/scheduler/sched-deadline.txt - official doc on SCHED_DEADLINE
 
-CREDITS
+## CREDITS
 --------------------------------------
 Agostino Mascitti - original author, Nov. 2018
